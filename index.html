@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beit Almonah</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet" />
+    <link rel="icon" href="image/android-chrome-512x512.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        .delete {
+            border: 10px solid red;
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start Settings Box -->
+    <div class="settings-box">
+        <div class="toggle-settings">
+            <i class="fa-solid fa-gear fa-spin"></i>
+        </div>
+        <div class="settings-container">
+            <div class="option-box">
+                <h4>Panel Colors</h4>
+                <ul class="colors-list">
+                    <li class="active" data-color="#283A22"></li>
+                    <li data-color="#495e74"></li>
+                    <li data-color="#757575"></li>
+                </ul>
+            </div>
+
+            <div class="option-box">
+                <h4>Category Backgrounds</h4>
+                <div class="random-Backgrounds">
+                    <span class="yes active" data-background="yes">yes</span>
+                    <span class="no" data-background="no">no</span>
+                </div>
+            </div>
+            <div class="option-box">
+                <h4>Bullets</h4>
+                <div class="bullets-option">
+                    <span class="yes active" data-display="show">Show</span>
+                    <span class="no" data-display="hide">Hide</span>
+                </div>
+            </div>
+            <button class="reset-options">Reset Options</button>
+            <div class="box-time">
+                <div id="clock" class="clock"></div>
+                <div id="date-time"></div>
+            </div>
+            <img src="image/logob.png" style="width: 200px; height: 200px" alt="" />
+            <div style="
+            text-align: center;
+            border-top: 1px solid rgb(12, 12, 137);
+            border-radius: 20px;
+            font-family: 'Times New Roman', Times, serif;
+          ">
+                <p>--o ESA Coding Lab o--</p>
+                <p>--o Beit Almonah o--</p>
+                <p>--o Cycle 5 o--</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Settings Box -->
+
+    <!-- Start Nav Bullets -->
+    <div class="hav-bullets">
+        <div class="bullet" data-section=".about-us">
+            <div class="tooltip">About Us</div>
+        </div>
+        <div class="bullet" data-section=".skills">
+            <div class="tooltip">Programming Languages</div>
+        </div>
+
+        <div class="bullet" data-section=".UML">
+            <div class="tooltip">UML</div>
+        </div>
+        <div class="bullet" data-section=".clickup">
+            <div class="tooltip">Clickup</div>
+        </div>
+        <div class="bullet" data-section=".figma">
+            <div class="tooltip">Figma</div>
+        </div>
+        <div class="bullet" data-section=".github">
+            <div class="tooltip">GitHub</div>
+        </div>
+        <div class="bullet" data-section=".homep">
+            <div class="tooltip">Home Pages</div>
+        </div>
+
+        <div class="bullet" data-section=".userp">
+            <div class="tooltip">User Pages</div>
+        </div>
+        <div class="bullet" data-section=".adminp">
+            <div class="tooltip">Admin Pages</div>
+        </div>
+        <div class="bullet" data-section=".timeline">
+            <div class="tooltip">Timeline</div>
+        </div>
+        <div class="bullet" data-section=".features">
+            <div class="tooltip">Features</div>
+        </div>
+        <div class="bullet" data-section=".testimonials">
+            <div class="tooltip">Team</div>
+        </div>
+    </div>
+    <!-- End Nav Bullets -->
+
+    <!-- Start Landing PAge -->
+    <div class="landing-page">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="header-area">
+                <img class="bg1" style="width: 50px; height: 50px" src="image/logob.png" alt="" />
+                <div class="logo">Beit Almonah</div>
+                <div class="links-container">
+                    <ul class="links open">
+                        <li>
+                            <a href="#" data-section=".about-us" class="active">About</a>
+                        </li>
+                        <li><a href="#" data-section=".skills">Languages</a></li>
+                        <li><a href="#" data-section=".UML">UML</a></li>
+                        <li><a href="#" data-section=".clickup">Click Up</a></li>
+                        <li><a href="#" data-section=".figma">Figma</a></li>
+                        <li><a href="#" data-section=".github">GitHub</a></li>
+                        <li><a href="#" data-section=".homep">Pages</a></li>
+                        <li><a href="#" data-section=".timeline">Timeline</a></li>
+                        <li><a href="#" data-section=".features">Features</a></li>
+                        <li><a href="#" data-section=".testimonials">Team</a></li>
+                    </ul>
+                    <button class="toggle-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="introduction-text">
+            <h1><span>Beit Almonah: Monetna & Syaghenta</span></h1>
+            <br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br />
+            <p></p>
+        </div>
+    </div>
+
+    <!-- End Landing PAge -->
+
+    <!-- Start About Us -->
+
+    <div class="container">
+        <div class="about-us">
+            <div class="info-box">
+                <h2>About Us</h2>
+                <p>
+                    We aim to successfully develop a Beit Almonah (BA) over the course
+                    of 6 weeks, utilizing the MERN stack, which includes Node.js, React,
+                    MongoDB, and Express technologies. <br />
+                    This project will be a collaborative effort involving the team
+                    members Mohamad Rammal, Riham Khafaja, Zainab Kraki, and Salma Slim.
+                </p>
+            </div>
+            <div class="image-box">
+                <img style="width: 70%; height: 70%; border-radius: 10px" src="image/codemasters.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- End About Us -->
+
+    <!-- Start Our Skills -->
+    <div class="skills">
+        <div class="container">
+            <h2>Project Technologies</h2>
+            <div class="skill-box">
+                <div class="skill-name">Mern Stack</div>
+                <div class="skill-progress">
+                    <span data-progress="70.2%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">CSS</div>
+                <div class="skill-progress">
+                    <span data-progress="16%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">Cloudinary</div>
+                <div class="skill-progress">
+                    <span data-progress="4.4%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">Firebase</div>
+                <div class="skill-progress">
+                    <span data-progress="4%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">Nodmailer</div>
+                <div class="skill-progress">
+                    <span data-progress="2.7%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">Stripe</div>
+                <div class="skill-progress">
+                    <span data-progress="1.5%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">Leaflet</div>
+                <div class="skill-progress">
+                    <span data-progress="1.2%"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Our Skills -->
+    <div class="containeraa">
+        <div class="box" data-aos="fade-up">
+            <!-- Start Gallery -->
+            <div class="UML">
+                <div class="container" style="background-color: #eee">
+                    <h2>Unified Modeling Language (UML)</h2>
+                    <div class="images-box">
+                        <img src="image/Beit Almonah - Complete.jpg" style="height: 150px"
+                            alt="Complete Activity Diagram" />
+                        <img src="image/Beit Almonah - Guest.jpg" style="height: 150px"
+                            alt="Guest Role Activity Diagram" />
+                        <img src="image/Beit Almonah - Normal User.jpg" style="height: 150px"
+                            alt="User Role Activity Diagram" />
+                        <img src="image/Beit Almonah - Trainer User.jpg" style="height: 150px"
+                            alt="Trainer Role Activity Diagram" />
+                        <img src="image/Beit Almonah - Admin.jpg" style="height: 150px"
+                            alt="Admin Role Activity Diagram" />
+                        <br />
+                        <img src="image/Beit Almonah - ClassDiagram.jpg" style="height: 150px" alt="Complete Class Diagram" />
+
+                        <img src="image/USE_CASE2.png" style="height: 150px" alt="Complete Use Case Diagram" />
+
+                        <img src="image/Beit Almonah - sequence diagram.jpg" style="height: 150px"
+                            alt="Complete Sequence Diagram" />
+                    </div>
+                </div>
+            </div>
+            <!-- End Gallery -->
+        </div>
+        <div class="box" data-aos="fade-down">
+            <!-- Start Gallery -->
+            <div class="clickup">
+                <div class="container" style="background-color: #eee">
+                    <h2>click Up & Trello</h2>
+                    <div class="images-box">
+                        <img src="image/click-up.png" style="height: 150px" alt="Click Up" />
+                        <img src="image/Click_up2.png" style="height: 150px" alt="Click Up" />
+                        <img src="image/trello.png" style="height: 150px" alt="Trello" />
+                    </div>
+                </div>
+            </div>
+            <!-- End Gallery -->
+        </div>
+        <div class="box" data-aos="fade-left">
+            <!-- Start Gallery -->
+            <div class="figma">
+                <div class="container" style="background-color: #eee">
+                    <h2>Figma</h2>
+                    <div class="images-box">
+                        <img src="image/Ghest_figma.png" style="height: 150px" calt="Guest Pages" />
+                        <img src="image/trainer_figma.png" style="height: 150px" calt="Trainer Pages" />
+                        <img src="image/worksho_figma.png" style="height: 150px" calt="Workshop Pages" />
+
+                        <br />
+
+                        <img src="image/Admin_figma.png" style="height: 150px" alt="Admin Pages" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-right">
+            <div class="github">
+                <div class="container" style="background-color: #eee">
+                    <h2>GitHub</h2>
+                    <div class="images-box">
+                        <img src="image/Github.png" style="height: 250px" alt="Github" />
+                        <img src="image/github_frontend.png" style="height: 250px" alt="Github-FrontEnd" />
+                        <img src="image/github_backend.png" style="height: 250px" alt="Github-BackEnd" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-aos="fade-right">
+            <div class="github">
+                <div class="container" style="background-color: #eee">
+                    <h2>Postman & RapidAPI</h2>
+                    <div class="images-box">
+                        <img src="image/postman1.png" style="height: 250px" alt="Postman" />
+                        <img src="image/postman2.png" style="height: 250px" alt="Postman" />
+                        <img src="image/rapidAPI.png" style="height: 250px" alt="Postman" />
+                        <img src="image/rapidAPI2.png" style="height: 250px" alt="Postman" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-aos="fade-right">
+            <div class="github">
+                <div class="container" style="background-color: #eee">
+                    <h2>Database</h2>
+                    <div class="images-box">
+                        <img src="image/mongodb.png" style="height: 250px" alt="MongoDB" />
+                        <img src="image/atlas.png" style="height: 250px" alt="Atlas" />
+                        <img src="image/firebase3.png" style="height: 250px" alt="Firebase" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-aos="fade-right">
+            <div class="github">
+                <div class="container" style="background-color: #eee">
+                    <h2>Swagger</h2>
+                    <div class="images-box">
+                        <img src="image/swagger.png" style="height: 250px" alt="Swagger" />
+                        <img src="image/swagger2png.png" style="height: 250px" alt="Swagger" />
+                        <img src="image/swagger3.png" style="height: 250px" alt="Swagger" />
+                        <img src="image/swagger4.png" style="height: 250px" alt="Swagger" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Gallery -->
+        <div class="box" data-aos="zoom-in">
+            <!-- Start Gallery -->
+            <div class="homep">
+                <div class="container" style="background-color: #eee">
+                    <h2>Guest Pages</h2>
+                    <div class="images-box">
+                        <img src="image/Home.png" style="height: 250px" alt="" />
+                        <img src="image/Home - Dark Mode.png" style="height: 250px" alt="" />
+                        <img src="image/Arabic Mode.png" style="height: 250px" alt="" />
+                        <img src="image/French Mode.png" style="height: 250px" alt="" />
+                        <img src="image/Login.png" style="height: 250px" alt="" />
+                        <img src="image/Sign in.png" style="height: 250px" alt="" />
+                        <img src="image/About Us.png" style="height: 250px" alt="" />
+                        <img src="image/Contact Us.png" style="height: 250px" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Gallery -->
+
+        <div class="box" data-aos="flip-up">
+            <!-- Start Gallery -->
+            <div class="userp">
+                <div class="container" style="background-color: #eee">
+                    <h2>User Pages</h2>
+                    <div class="images-box">
+                        <img src="image/Workshop-1.png" style="height: 250px" alt=" " />
+                        <img src="image/add_cart.png" style="height: 250px" alt=" " />
+                        <img src="image/Stripe.png" style="height: 250px" alt=" " />
+                        <img src="image/Profile.png" style="height: 250px" alt=" " />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Gallery -->
+
+        <div class="box" data-aos="flip-down">
+            <!-- Start Gallery -->
+            <div class="adminp">
+                <div class="container" style="background-color: #eee">
+                    <h2>Trainer Pages</h2>
+                    <div class="images-box">
+                        <img src="image/Chat.png" style="height: 150px" alt="" />
+                        <img src="image/Welcome-chat.png" style="height: 150px" alt="" />
+                        <img src="image/Recipes.png" style="height: 150px" alt="" />
+                        <img src="image/AddProduct.png" style="height: 150px" alt="" />
+                        <img src="image/Myorders.png" style="height: 150px" alt="" />
+                        <img src="image/myworkshops.png" style="height: 150px" alt="" />
+                        <img src="image/ViewWorkshopDetails.png" style="height: 150px" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Gallery -->
+        <div class="box" data-aos="flip-left">
+            <!-- Start Gallery -->
+            <div class="homep">
+                <div class="container" style="background-color: #eee">
+                    <h2>Admin Pages</h2>
+                    <div class="images-box">
+                        <img src="image/Admin - Dashboard.png" style="height: 150px" alt="" />
+                        <img src="image/Admin - Create Product.png" style="height: 150px" alt="" />
+                        <img src="image/Admin - payment.png" style="height: 150px" alt="" />
+                        <img src="image/Admin - Users.png" style="height: 150px" alt="" />
+                        <img src="image/Admin Dahsboard.png" style="height: 150px" alt="" />
+                        <img src="image/Admin- View User.png" style="height: 150px" alt="" />
+                        <img src="image/Workshop.png" style="height: 150px" alt="" />
+                        <img src="image/Category.png" style="height: 150px" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Gallery -->
+        <div class="box" data-aos="flip-right">
+            <!-- Start Gallery -->
+            <div class="homep">
+                <div class="container" style="background-color: #eee">
+                    <h2>Stripe & Cloudinary Pages</h2>
+                    <div class="images-box">
+                        <img src="image/strip_click.png" style="height: 150px" alt="" />
+                        <img src="image/strip2.png" style="height: 150px" alt="" />
+                        <img src="image/cloudinary.png" style="height: 150px" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-aos="flip-right">
+            <!-- Start Gallery -->
+            <div class="homep">
+                <div class="container" style="background-color: #eee">
+                    <h2>Emails</h2>
+                    <div class="images-box">
+                        <img src="image/confirmemail.png" style="height: 150px" alt="" />
+                        <img src="image/resetpassword.png" style="height: 150px" alt="" />
+                        <img src="image/order-pay.png" style="height: 150px" alt="" />
+                        <img src="image/contactEmail.png" style="height: 150px" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Gallery -->
+    </div>
+
+    <!-- Start Timeline -->
+    <div class="timeline">
+        <div class="container">
+            <div class="timeline-content">
+                <div class="year">Week 1</div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Project Planning</h3>
+                        <p>
+                            We used Figma and Miro to create UML diagrams for our Beit
+                            Almonah project. Figma allowed us to collaborate in real-time,
+                            making it easy for our team to work together on class diagrams,
+                            sequence diagrams, and use case diagrams. This collaborative
+                            interface fostered teamwork and ensured that everyone was on the
+                            same page when it came to visualizing our project's
+                            architecture.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Plan of design</h3>
+                        <p>
+                            Miro offered a digital whiteboard experience, perfect for
+                            visualizing complex systems and workflows. With its infinite
+                            canvas and extensive library of shapes, we could map out our
+                            project's structure effectively. By using these tools, we
+                            streamlined our design process, fostered collaboration, and
+                            ensured everyone understood our project's architecture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-content">
+                <div class="year">Week 2</div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Back-End</h3>
+                        <p>
+                            For the backend of our Beit Almonah project, we used Node.js and
+                            Express.js to build a robust API. We defined endpoints for CRUD
+                            operations on our MongoDB database and implemented
+                            authentication to secure sensitive data. This backend served as
+                            the foundation of our project, handling data storage, retrieval,
+                            and processing.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Project Pages Distribution Part 1</h3>
+                        <p>
+                            By structuring our backend with modular components and following
+                            MVC architecture, we ensured scalability and maintainability.
+                            This modular approach made our codebase easier to understand and
+                            maintain, allowing us to iterate and add new features with ease.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-content">
+                <div class="year">Week 3</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Front-End</h3>
+                        <p>
+                            In the frontend of our Beit Almonah project, we created a
+                            responsive UI with React.js. We built reusable components and
+                            used state management techniques to provide dynamic user
+                            experiences. React's component-based architecture allowed us to
+                            break down complex UIs into manageable parts, making development
+                            more efficient.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Project Pages Distribution Part 2</h3>
+                        <p>
+                            With modern CSS frameworks like Tailwind, we styled our
+                            components for consistency across devices. These frameworks
+                            provided pre-built components and utilities that helped us
+                            design a visually appealing and user-friendly interface.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="left">
+                    <div class="content">
+                        <h3>Continue CSS Design</h3>
+                        <p>
+                            Maintain a style guide for cohesive design, and test across
+                            devices for a seamless user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-content">
+                <div class="year">Week 4</div>
+
+                <div class="left">
+                    <div class="content">
+                        <h3>Front-End Continue</h3>
+                        <p>
+                            Continuing with our frontend development, we integrated
+                            third-party APIs for geolocation and social media
+                            authentication. We also enhanced navigation with React Router
+                            and implemented client-side form validation for data integrity.
+                            These additional features enhanced the user experience and made
+                            our application more robust.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Check And Review</h3>
+                        <p>
+                            By iterating on user feedback, we delivered a polished
+                            application that met our users' needs. This iterative approach
+                            allowed us to continuously improve our frontend interface and
+                            address any issues or concerns raised by our users.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Finish Front-End</h3>
+                        <p>
+                            Test thoroughly for usability and polish until ready for
+                            deployment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-content">
+                <div class="year">Week 5</div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Manage State</h3>
+                        <p>
+                            To manage state in our Beit Almonah project, we used Context API
+                            and Redux. Context API helped us share state between components
+                            without prop drilling, while Redux offered a centralized store
+                            for complex state changes. This combination of state management
+                            solutions allowed us to handle state in a more organized and
+                            efficient manner.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Mange State Continue</h3>
+                        <p>
+                            By incorporating these solutions, we simplified state management
+                            and improved code maintainability. This made it easier for our
+                            team to work on different parts of the application
+                            independently, without worrying about how changes in one part
+                            might affect another.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-content">
+                <div class="year">Week 6</div>
+
+                <div class="left">
+                    <div class="content">
+                        <h3>Web Presentation</h3>
+                        <p>
+                            For our Beit Almonah project presentation, we showcased our work
+                            to stakeholders and potential users. We used visual aids like
+                            slide decks and live demos to highlight key features and
+                            demonstrate our project's value. This visual presentation helped
+                            our audience understand the capabilities of our MERN stack
+                            project and how it could benefit them.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Record Videos</h3>
+                        <p>
+                            Project videos serve as comprehensive visual guides, presenting
+                            the Beit Almonah's features, user workflows, and system
+                            functionalities, offering an engaging and informative resource
+                            for stakeholders and potential users.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Training</h3>
+                        <p>
+                            Training sessions focus on honing both individual and team
+                            presentation abilities, equipping us to articulate the
+                            intricacies of the Beit Almonah project confidently to diverse
+                            audiences.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Finish Project</h3>
+                        <p>Congratulations on completing the Beit Almonah project!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Timeline -->
+
+    <script>
+        window.addEventListener("scroll", function () {
+            const timelineContents = document.querySelectorAll(".timeline-content");
+            const windowHeight = window.innerHeight;
+
+            timelineContents.forEach((content) => {
+                const contentTop = content.getBoundingClientRect().top;
+
+                if (contentTop < windowHeight) {
+                    content.classList.add("fade-in");
+                } else {
+                    content.classList.remove("fade-in");
+                }
+            });
+        });
+    </script>
+
+    <!-- Start Features -->
+    <div class="features">
+        <h2>Our Features</h2>
+        <div class="container">
+            <div class="feat-box bx2">
+                <img src="image/2.png" alt="" />
+                <h4>ClickUp</h4>
+                <p>
+                    ClickUp streamlines our task management with its intuitive
+                    interface, fostering efficient organization and timely task
+                    completion. Customizable workflows adapt to our library's dynamic
+                    needs, enhancing project coordination.
+                </p>
+            </div>
+            <div class="feat-box">
+                <img src="image/figma (1).png" alt="" />
+                <h4>Figma</h4>
+                <p>
+                    Figma enables seamless collaboration, aiding our team in real-time
+                    design work. Its prototyping and wireframing tools refine our
+                    interface, while version control keeps our project history intact
+                    and allows for easy reversions.
+                </p>
+            </div>
+            <div class="feat-box">
+                <img src="image/github (1).png" alt="" />
+                <h4>GitHub</h4>
+                <p>
+                    GitHub's secure version control hosts our code repositories,
+                    facilitating smooth collaboration among developers. Its issue
+                    tracking ensures prompt bug resolution, while pull requests and
+                    reviews maintain code quality.
+                </p>
+            </div>
+            <div class="feat-box">
+                <img src="image/miro.png" alt="" />
+                <h4>Miro</h4>
+                <p>
+                    Miro's visual workspace aids in brainstorming and planning our
+                    library system's features collaboratively. Flow diagrams and mind
+                    maps create a clear blueprint for development, while remote
+                    collaboration fosters team contribution from anywhere.
+                </p>
+            </div>
+            <div class="feat-box bx5">
+                <img src="image/vsc.jpg" style="border: 1px solid blue; border-radius: 10px" alt="" />
+                <h4>VS Code</h4>
+                <p>
+                    VS Code offers a robust environment for code writing and debugging,
+                    enhanced by versatile extensions. Its integrated terminal
+                    streamlines workflow, allowing seamless command execution within the
+                    editor.
+                </p>
+            </div>
+            <div class="feat-box">
+                <img src="image/font_awesome_logo.png" alt="" />
+                <h4>FontAwesome</h4>
+                <p>
+                    FontAwesome's diverse icon collection elevates our interface,
+                    ensuring visual appeal and usability. Scalability guarantees
+                    consistent high-quality visuals across screens, easily integrated
+                    within HTML, CSS, and JavaScript.
+                </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- End Features -->
+
+    <!-- Start Testimonials -->
+    <div class="testimonials">
+        <div class="container">
+            <h2>Project Team</h2>
+            <div class="ts-box">
+                <p>ESA Coding Lab Bootcamp. beitalmonah@gmail.com</p>
+                <div class="person-info">
+                    <img src="image/mohamad.png" style="width: 100px" alt="" />
+                    <h4>Mohamad Rammal</h4>
+                    <p>Code Masters</p>
+                </div>
+            </div>
+            <div class="ts-box">
+                <p>ESA Coding Lab Bootcamp. beitalmonah@gmail.com</p>
+                <div class="person-info">
+                    <img src="image/riham.png" style="width: 110px" alt="" />
+                    <h4>Riham Khafaja</h4>
+                    <p style="font-size: 15px">Code Masters</p>
+                </div>
+            </div>
+            <div class="ts-box">
+                <p>ESA Coding Lab Bootcamp. beitalmonah@gmail.com</p>
+                <div class="person-info">
+                    <img src="image/salma.png" style="width: 90px" alt="" />
+                    <h4>Salma Slim</h4>
+                    <p>Code Masters</p>
+                </div>
+            </div>
+            <div class="ts-box">
+                <p>ESA Coding Lab Bootcamp. beitalmonah@gmail.com</p>
+                <div class="person-info">
+                    <img src="image/zainab.png" style="width: 100px" alt="" />
+                    <h4>Zainab Karaki</h4>
+                    <p>Code Masters</p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- End Testimonials -->
+    <!-- Start Contact US -->
+    <div class="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="">
+                <div class="left">
+                    <input type="text" placeholder="Your Name" name="username" />
+                    <input type="text" placeholder="Your Phone" name="phone" />
+                    <input type="email" placeholder="Your Email" name="email" />
+                    <input type="text" placeholder="Tittle" name="tittle" />
+                </div>
+                <div class="right">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Contact US -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+        <p>Copyright © 2024 Beit Almonah - beitalmonah@gmail.com</p>
+    </div>
+    <!-- End Footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
