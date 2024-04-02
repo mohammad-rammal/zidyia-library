@@ -84,20 +84,41 @@ body {
 }
 
 .settings-box .option-box .colors-list li.active {
-    border-color: #fff;
+    border-color: rgb(13, 4, 92);
 }
 
 .settings-box .option-box .colors-list li:first-child {
-    background-color: #283A22;
+    background-color: #5DD3B3;
 }
 
+
 .settings-box .option-box .colors-list li:nth-child(2) {
-    background-color: #495e74;
+    background-color: #2F3B48;
 }
 
 .settings-box .option-box .colors-list li:nth-child(3) {
-    background-color: #757575;
+    background-color: #384450;
 }
+
+.settings-box .option-box .colors-list li:nth-child(4) {
+    background-color: #576371;
+}
+
+.settings-box .option-box .colors-list li:nth-child(5) {
+    background-color: #707070;
+}
+
+
+
+.settings-box .option-box .colors-list li:nth-child(6) {
+    background-color: #ECFBF8;
+}
+
+.settings-box .option-box .colors-list li:nth-child(7) {
+    background-color: #5DD3B3;
+}
+
+
 
 
 .settings-box .option-box .yes,
@@ -282,7 +303,7 @@ body {
 .introduction-text {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
     z-index: 2;
     color: v;
@@ -959,7 +980,7 @@ body {
 .testimonials .ts-box {
     position: relative;
     z-index: 2;
-    width: calc(97% / 4);
+    width: calc(97% / 3);
     float: left;
     background-color: #fff;
     padding: 20px;
